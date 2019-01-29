@@ -1,0 +1,33 @@
+{
+  "name": "webpack-sri-runtime-hash-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "npm run clean && webpack --progress",
+    "build:prod": "npm run clean && ENV=production webpack --progress",
+    "build": "npm run build:dev",
+    "clean": "rimraf ./build",
+    "start": "webpack-dev-server --progress",
+    "test": "exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "~7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "~7.2.0",
+    "@babel/preset-env": "~7.3.1",
+    "@babel/preset-react": "~7.0.0",
+    "babel-loader": "~8.0.5",
+    "html-webpack-plugin": "~3.2.0",
+    "prettier": "~1.16.1",
+    "react": "~16.7.0",
+    "react-dom": "~16.7.0",
+    "rimraf": "~2.6.3",
+    "uglifyjs-webpack-plugin": "~2.1.1",
+    "webpack": "~4.29.0",
+    "webpack-cli": "~3.2.1",
+    "webpack-dev-server": "~3.1.14",
+    "webpack-subresource-integrity": "~1.3.1"
+  }
+}
